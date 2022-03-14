@@ -21,7 +21,7 @@ app.get("/GoT", (req, res) => {
 
 app.get("/GoT/:id", (req, res) => {
     const idx = parseInt(req.params.id)
-    const matcher = gameOfThrones.find( game => game.id === idx)
+    const matcher = gameOfThrones.find( object => object.id === idx)
     res.json(matcher)
 })
 
